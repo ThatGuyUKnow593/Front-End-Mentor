@@ -1,10 +1,11 @@
 body{
   overflow-y: hidden;
+  font-size: 10px;
 }
 
 .allContent{
-  width: 1440px;
-  height: 104vh;
+  max-width: 1440px;
+  width: 100%;
   display: flex;
   margin-left: -2.5%;
   margin-top: -2.5%;
@@ -12,20 +13,24 @@ body{
 
 .headPic{
   background-image: linear-gradient(to bottom right, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
+  height: 110vh;
   width: 100%;
 }
 
 #mainPic {
-  width: 458px;
-  height: 473px;
-  margin-top: 45%;
-  margin-left: 15%;
+  position: absolute;
+  max-width:458px;
+  width: 100%;
+  max-height: 473px;
+  height: 100%;
+  left: 5%;
+  top: 18%;
 }
 
 .textContent{
   margin-top: 5%;
   margin-left: 2.5%;
-  width: 90%;
+  width: 100%;
 }
 
 .linksHead {
@@ -36,13 +41,13 @@ body{
 }
 
 .linksHead p {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .linksHead ion-icon {
-  width: 30px;
-  height: 30px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .outLink {
@@ -50,33 +55,42 @@ body{
 }
 
 .outLink ion-icon {
-  margin-right: 25px;
+  margin-right: 1.25rem;
 }
 
 .textContent h1{
-  font-size: 60px;
-  margin-top: 25%;
+  font-size: 3rem;
+  margin-top: 20%;
 }
 
 .textContent p {
-  font-size: 30px;
+  font-size: 1.75rem;
+}
+
+.signUp h2 {
+  font-size: 1.5rem;
+}
+
+.inputLine{
+  display: flex;
+  align-items: center;
 }
 
 .signUp input{
   height: 50px;
   width: 55%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .signUp a {
   text-decoration: none;
   color: white;
   background-color: hsl(163, 95%, 43%);
-  font-size: 30px;
+  font-size: 2rem;
   margin-left: 2.5%;
-  padding-top: 16px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 60px;
   padding-right: 60px;
   vertical-align: middle;
@@ -85,8 +99,9 @@ body{
 }
 
 .privacyPolicy {
-  text-align: right;
-  margin-top: 20%;
+  position: absolute;
+  top: 95%;
+  left: 95%;
 }
 
 .attribution {
